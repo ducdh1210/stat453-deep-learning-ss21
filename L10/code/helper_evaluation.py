@@ -41,4 +41,4 @@ def compute_accuracy(model, data_loader, device):
 
             num_examples += targets.size(0)
             correct_pred += (predicted_labels == targets).sum()
-    return correct_pred.float()/num_examples * 100
+    return correct_pred.float() / num_examples * 100
